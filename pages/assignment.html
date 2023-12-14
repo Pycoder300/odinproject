@@ -49,14 +49,14 @@
         <p>
             To clarify it further, have a look at this image below. Here i have divided this image into sections. Each of these sections represents a parent class. And the elements inside these sections such as images, texts, buttons, etc are the child classes of their parents. If you are having any sort of trouble following along in any portion of this article, feel free to come back to this image for reference.
         </p>
-        <img class="layout-image" src=".\images\Add a little bit of body text.png" alt="layout image">
+        <img class="layout-image" src="..\images\Add a little bit of body text.png" alt="layout image">
         <p>Another thing I would like to mention is that I will be referring to these classes as sections of this webpage I am trying to style. For example: .top= .top section. </p>
         <p>Let's now talk about the styling of each of these sections with their classes and also the child classes that they have.(*classes are attributes that are given to div tags to be styled in CSS).</p>
       </div>
       <div class="article"> 
         <h2>Body:
         </h2>
-        <img class="emage" src=".\images\body.png"alt="body">
+        <img class="emage" src="..\images\body.png"alt="body">
         <p>Here, I have given the margin and padding values as 0 and you may ask why. This is because, by doing so, all the five main div sections inside the HTML body will extend to the edge of the browser window. If I have not done so then there will likely be a slightly noticeable gap between the browser window and the webpage.
         </p>
         <p> Also, there is another possibility of having gaps between the elements that are inside the body unless their margin and padding values are manipulated to remove the gap if there is any. Now, another value you can see is the font-family. Its values have been set to Arial, Helvetica, sans-serif; This will set every text content to one of these three values(basically the cursive styles of these values) that are included inside the HTML body.
@@ -76,35 +76,35 @@
           Also, flex is only useful when you have the same type of elements inside a class, which can be positioned by using other flex properties like align-items and justify-content, which you will see in the next section class of this page i have styled called .mid. The last property I have provided is a height of 600px. This has been given to ensure that the height of this section remains the same on every page, for example, this page and the ‘My codepens’ page. If I hadn’t done so then you would likely see its height getting larger or smaller based on how many elements are placed inside it on every page.
         </p>
         <h3>.logo:</h3>
-        <img class="emage" src=".\images\logo.png" alt=".logo class">
+        <img class="emage" src="..\images\logo.png" alt=".logo class">
         <p>First i had to give the logo some dimensions to make it slightly smaller so that it could fit and look perfect with the rest of the elements inside .top. Thus i have set the height and width values of it to 120px and 140px respectively. The margin-left property with the value of 150px increases the gap at its left side from the browser window and the margin-top of around 5px provides a slight gap from the top. 
         </p>
         <h3>.header</h3>
-        <img class="emage" src=".\images\header.png" src=".header class">
+        <img class="emage" src="..\images\header.png" src=".header class">
         <p>The .header is the navigation menu here that contains the links with their respective tag text like ‘home’, ‘my codepens’ and ‘my github’ that you can notice at the top right corner of the homepage. Also, here i have provided the dimension values of height and width to it. It was necessary to do so because it was taking the entire width of the space (basically the top portion). 
         </p>
         <p>Because of this, I was having trouble placing the logo at the top left and the boat image towards the lower right area, and this was the only solution that I could come up with. Giving it height and width properties limits its dimensions to a certain area thus reducing the likelihood of any interference in positioning of other elements relative to it. The margin-left: 900px; pushed it more towards the top right side by increasing the gap on its left. Now the only thing that was left was to reduce the top gap. Initially, I set the margin-top value to 0px but still, there was a significant top gap, so I tried using negative values and it kind of did the job. 
         </p>
         <h3>.header li (header list)
         </h3>
-        <img class="emage" src=".\images\header li.png" alt="header list">
+        <img class="emage" src="..\images\header li.png" alt="header list">
         <p>The first two properties display: flex; and flex-direction: row; determine the layouts of anchor elements which are horizontal in this case. You will notice these are placed like one beside another. However, by default, the direction of the anchor elements will always be a row unless you want to display them vertically as a column by modifying the flex-direction property. I have also given a justify-content property with a value of space-between and this was to ensure there remains a gap between the anchor elements or else it will look a bit clumsy. 
         </p>
         <h3>Li a (list anchor elements)</h3>
-        <img class="emage" src=".\images\li a.png" alt="list anchor elements">
+        <img class="emage" src="..\images\li a.png" alt="list anchor elements">
         <p>Now by default, you will notice that there is always an underline that remains on the HTML list text. To remove this underline I have provided another property called text-decoration and set its value to none as I do not want any permanent styling. I will be bringing back the underline but in a different way with a hover effect.
         </p>
         <h3>Li a:hover
         </h3>
-        <img class="emage" src=".\images\li a hover.png" alt="list anchor pseudo class">
+        <img class="emage" src="..\images\li a hover.png" alt="list anchor pseudo class">
         <p>Here I am creating a hover effect, whenever the mouse cursor is placed on the anchor items that are inside the navigation bar. Let’s look at the above code ‘li a: hover’. Li’ stands for list, ‘a’ stands for anchor elements, and ‘hover’ is the action that will trigger an effect on the item we are targeting. So, by writing ‘li a: hover’ I am targeting the anchor elements inside the header list which is also inside the navigation, to display a highlighting effect as soon as the cursor points to it. For the highlighting effect, I have provided a CSS property of text-decoration: underline; that will show an underline on individual anchor items.  I’d like to point out one mistake I had made before it. Earlier I wrote ‘ul li: hover’ which made every anchor item display the underline effect on every anchor element when the cursor is pointed at just one of them. It was because I was targeting the whole list instead of anchor elements. You can probably figure it out by looking at the code I have mentioned here.
         </p>
         <h3>.top-content</h3>
-        <img class="emage" src=".\images\top content.png" alt="top content class">
+        <img class="emage" src="..\images\top content.png" alt="top content class">
         <p>The text that you can see inside ‘.top’ section is contained inside a class called ‘.top-content’. It has a heading ‘h1’ and a paragraph ‘p’ both of which have their respective texts. Here I am manipulating the position of this class relative to ‘.top’ section by adding properties like ‘margin-left: 185px;’ and ‘margin-top: 130px;’ which increases its gap sizes from the left and top sides.
         </p>
         <h3>.top-content h1</h3>
-        <img class="emage" src=".\images\top content h1.png" alt="top content heading">
+        <img class="emage" src="..\images\top content h1.png" alt="top content heading">
         <p>Here i am targeting the heading h1 of the class ‘.top-content’. I have increased the text size to 48px by applying the property ‘font-size; 48px;’. To make the text bold, i have given it ‘font-weight: bolder;’ property. 
         </p>
         <h3>.top-content p
@@ -113,11 +113,11 @@
         <p>Similar to the heading h1, here I am targeting the paragraph p of the .top-content. Here I have made the text size to 16px, reduced the boldness value of it to lighter, and increased the gap between the letters to 1px with the property letter-spacing: 1px; to make it more readable.
         </p>
         <h3>.button</h3>
-        <img class="emage" src=".\images\button.png" alt="button class">
+        <img class="emage" src="..\images\button.png" alt="button class">
         <p> By looking at the homepage you will notice that there is a button present below the text inside the .top section. The background-color: #3882F6; gives it a color of blue and the color: white; sets the text color as white. Additionally, you can also notice that i have provided the width and height properties as well to adjust its sizing. The margin-left of 185px increases the left gap. I have already talked about what letter spacing does so you can guess what it does. Now, there are two new properties I have provided here, which are border-style and border-radius. A button element in HTML by default has a visible border and by setting the border-style to none, i have managed to hide it so that it looks good. Can you see slight curves at the corners of the button? This is where border-radius property comes in. Here, I have set its value to 5px. 
         </p>
         <h3>.sailboat</h3>
-        <img class="emage" src=".\images\sailboat (2).png" alt="sailboat class">
+        <img class="emage" src="..\images\sailboat (2).png" alt="sailboat class">
         <p>If you look at the homepage, you will notice a picture of a sailboat towards the right side just below the navigation bar. I have set its height and width to 350px and 400px. I brought it towards the right side by increasing the gap on its left with the margin-left property. With the margin-top of -300px, I brought it towards the navbar. 
         </p>
       </div>
@@ -125,29 +125,29 @@
         <h2>Styling the .mid section:
         </h2>
         <h3>.flex</h3>
-        <img class="emage" src=".\images\flex.png" alt="flex class">
+        <img class="emage" src="..\images\flex.png" alt="flex class">
         <p>The .flex here is a container for all the images and texts that are there inside of ‘.mid’. For the design of this section, i will be giving it a flex style with display: flex; property. The reason I want to give it a flex style is because it will be easier to achieve the layout that is shown in the image which i have provided at the beginning of this article. The flex-direction: row; aligns all the elements horizontally one by one, although by default you will already get this even without mentioning flex-direction. The justify-content: center; property is another important rule that brings all the elements to the center but it happens vertically rather than horizontally. 
         </p>
         <h3>.mid-heading
         </h3>
-        <img class="emage" src=".\images\mid-heading.png" alt="mid heading class">
+        <img class="emage" src="..\images\mid-heading.png" alt="mid heading class">
         <p>The .mid-heading is the div container for the heading text inside .mid section. Here i am trying to position this text towards the top center by manipulating some CSS properties. The margin-left; 480px; brings the heading text to the center by increasing its left-side gap. While the margin-top: 30px; provides some gap from the top.
         </p>
         <h3>Mid h2
         </h3>
-        <img class="emage" src=".\images\mid h2.png" alt="mid heading">
+        <img class="emage" src="..\images\mid h2.png" alt="mid heading">
         <p>I have increased the text size by 36px by using font-size. Made the text slightly bolder with font-weight and provided the text color that is the same as the background color of the .top section.
         </p>
         <h3>.mid p</h3>
-        <img class="emage" src=".\images\mid p.png" alt="mid paragraph">
+        <img class="emage" src="..\images\mid p.png" alt="mid paragraph">
         <p>Here I am styling the texts that you can see below these four images inside .mid section. The color property and its value give it a darker grey color and the font-weight property has been used to make it bold. 
         </p>
         <h3>.image</h3>
-        <img class="emage" src=".\images\image.png" alt="image class">
+        <img class="emage" src="..\images\image.png" alt="image class">
         <p>The blocks of images you can see inside .mid section has been assigned .image class to all of them. This way i can style them all at once. I needed to give all these images a certain height and width and for this i have provided the necessary css properties you can see above. Both of them are assigned 150px as their values. I have also provided a border to them with a blue color and a solid style. The border-radius of 20px provides the necessary curvature around their corners. To make the border bold, i have given a border-width of 5px.
         </p>
         <h3>.flex-items</h3>
-        <img class="emage" src=".\images\flex items.png" alt="flex items class">
+        <img class="emage" src="..\images\flex items.png" alt="flex items class">
         <p>Now, the images along with their text are contained inside another class called .flex-items. I have enclosed both text and image inside another class because I wanted to put them inside a specified width and height. This was necessary because of positioning them side by side as flex items. Additionally, I have provided these flex items with specific width and height properties because there were some overflowing of texts onto one another and there were uneven gaps between these items as well. If I had provided ‘align-items: space-between; in .flex earlier then it could have made even spaces but then again, it would not have achieved the exact layout that you can see. 
         </p>
       </div>
@@ -155,44 +155,44 @@
           <h2>Styling .lower-mid section
           </h2>
           <h3>.lower-mid</h3>
-          <img class="emage" src=".\images\lower-mid.png" alt="lower mid class">
+          <img class="emage" src="..\images\lower-mid.png" alt="lower mid class">
           <p>The .lower-mid section contains a quote written by me with my GitHub alias as a name. Instead of using margin this time except on one of its elements, i have used padding-top, padding-bottom and padding-left to position the text at the middle. Additionally i have set its background-color to #E5E7EB. 
           </p>
           <h3>.lower-mid p</h3>
-          <img class="emage" src=".\images\lower-mid p.png" alt="lower mid paragraph">
+          <img class="emage" src="..\images\lower-mid p.png" alt="lower mid paragraph">
           <p>Here i have styled the text quote in the paragraph tag inside lower-mid with font-size and font-family. The value of 36px has its size increased significantly and the italic font kinda changed how it looks. 
           </p>
           <h3>.para-2</h3>
-          <img class="emage" src=".\images\para-2.png" alt="para 2 class">
+          <img class="emage" src="..\images\para-2.png" alt="para 2 class">
           <p>This class contains my github alias name called pycoder300. Here i have increased its left side gap by 700px with margin-left property and shifted it more towards the right side. 
           </p>
        </div>
        <div class="article">
         <h2>Styling .lower section</h2>
         <h3>.lower</h3>
-        <img class="emage" src=".\images\lower.png" alt="lower class">
+        <img class="emage" src="..\images\lower.png" alt="lower class">
         <p>The .lower section contains the blue banner that has some text with a button besides it. Now, for positioning the banner in the middle, i have set the padding of .lower content to 100px.
         </p>
         <h3>.lower-banner</h3>
-        <img class="emage" src=".\images\lower-banner.png" alt="lower banner class">
+        <img class="emage" src="..\images\lower-banner.png" alt="lower banner class">
         <p>Here i am styling the banner. I have set the banner color to #3882F6 which is blue. The banner also has curves in its corner that is set to 8px. I have added a padding of 10px to increase the gap between the text and its outer edges. 
         </p>
         <h3>.lower-text</h3>
-        <img class="emage" src=".\images\lower-text.png" alt="lower text class">
+        <img class="emage" src="..\images\lower-text.png" alt="lower text class">
         <p>Now, i have enclosed the text inside the lower banner with another container called .lower-text. I did this for positioning of the text inside the banner. I wanted more gap between the text and the top side of the banner so i gave it a margin-top value of 30px. Additionally i have set its width to 600px because it was taking almost all the width available inside the banner. This was causing me problems while positioning the button slightly upwards from the bottom side inside the banner. By limiting the .lower-text width to 600px, i was able to move the container that contained the button further before moving it up beside the text. There is also a margin-left value of 100px which moves the text slightly towards right side. 
         </p>
         <h3>.button-container</h3>
-        <img class="emage" src=".\images\button-container.png" alt="button container class">
+        <img class="emage" src="..\images\button-container.png" alt="button container class">
         <p>The .button-container contains the button that is inside the lower banner. Similar to .lower-text, i am using .button-container to position the button according to the layout design image that is provided in the odin project. The margin-left value of 680px moves the container further toward the right by increasing its left-side gap inside the banner from it. Now, notice one thing this value I have provided is greater than the width of .lower-text container, which will be useful in moving it upward. Now there will be no interference from .lower-text as i use the margin-top value of -40px to decrease the top gap of the button container so that it moves slightly upwards and positions itself beside .lower-text. </p>
         <h3>.button-2</h3>
-        <img class="emage" src=".\images\button-2.png" alt="button 2 class">
+        <img class="emage" src="..\images\button-2.png" alt="button 2 class">
         <p>To style the button, I have used the same background color here as the .lower-banner. Also, I have included a solid white border that highlights it and provides a visible boundary. The height and width values provide its rectangular shape while the border-radius value provides curves around its corners.
         </p>
        </div>
        <div class="article">
         <h2>Styling the .footer section</h2>
         <h3>.footer</h3>
-        <img class="emage" src=".\images\footer.png" alt="footer class">
+        <img class="emage" src="..\images\footer.png" alt="footer class">
         <p>The first thing I did with .footer was to give it a display of flex. By now you already know what flex-direction: row; does. To bring the footer text in the middle, I have used justify-content property and set its value to the center. Additionally, I have provided it with a background color that is the same as the .top section. I've set a white color to the footer text. Now to increase the size of the footer, I have provided a padding of 20px, which will increase the gap all around the footer text. 
         </p>
        </div>
