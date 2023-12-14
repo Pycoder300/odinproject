@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="welcome to my final css assignment">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My odin webpage</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="top">
+        <img class="logo" src="images/My odin.png" alt="odin webpage logo">
+        <header class="header">
+          <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="pages/codepens.html">My codepens</a>
+                    <a href="https://github.com/Pycoder300/odinproject-css-landing-page" target="_blank" rel="noopener noreferrer">My github</a>
+                </li>
+            </ul>
+          </nav>  
+        </header>
+    <div class="top-content">
+        <h1>Hi! This is my final<br> CSS assignment. </h1>
+        <p>Was it worth it? If you ask me then I’d say, most certainly it is.<br>
+            The creation of this page shows my progress so far. All thanks<br>             
+            to the Odin project. Also checkout how i made this whole assignment.
+            </p>
+        </div>
+        <button class="button" id="creating">here</button>
+        <script>
+            document.getElementById('creating').addEventListener('click', function() {
+// Change the button text
+document.getElementById('creating').textContent = 'Link';
+
+// Redirect the user to the desired URL
+window.location.href = 'pages/assignment.html';
+});
+       </script>
+            <img class="sailboat" src="images/sailboat.png" alt="A sailboat">
+    </div>
+
+    <div class="mid">
+        <div class="mid-heading">
+        <h2>What helped me the most.</h2>
+        </div>
+        <div class="flex">
+        <div class="flex-items">
+        <img class="image" src="images/image-1.png" alt="picture">
+        <p>Some valuable resources<br> that i got here for free.</p>
+        </div>
+        <div class="flex-items">
+        <img class="image" src="images/image-4.png" alt="picture">
+        <p>A well structured<br> content.
+            </p>
+            </div>
+        <div class="flex-items">
+        <img class="image" src="images/image-2.png" alt="picture">
+        <p>All of the concepts here<br>
+            are explained in an easy-to-digest manner.
+           </p>
+        </div>
+        <div class="flex-items">
+        <img class="image" src="images/image-3.png" alt="picture">
+        <p>
+            It’s not all texts, but also interactive examples that
+guided the overall learning process.
+        </p>
+        </div>
+        </div>
+    </div>
+
+    <div class="lower-mid">
+        <p>
+            “ I was really skeptical at the beginning of how good it'll be<br> as it's a free course.
+            But let me tell you that it certainly<br> exceeded my expectations.”
+             
+        </p>
+        <div class="para-2">
+        <p>
+            -Pycoder300
+        </p>
+    </div>
+    </div>
+
+    <div class="lower">
+        <div class="lower-banner">
+            <div class="lower-text">
+        <h2>
+                Check out my code-pens! 
+        </h2>
+        <p>
+                I have created a few code-pens that show most of the concepts I've learned. 
+        </p>
+            </div>
+            <div class="button-container">
+            <button class="button-2" id="here-2">Here</button>
+            <script>
+                 document.getElementById('here-2').addEventListener('click', function() {
+    // Change the button text
+    document.getElementById('here-2').textContent = 'Link';
+
+    // Redirect the user to the desired URL
+    window.location.href = 'pages/codepens.html';
+  });
+            </script>
+        </div>
+        </div>
+    </div>
+     <div class="footer">
+        <footer>
+            Copyright © The Odin Project 2021
+        </footer>
+    </div>
+</body>
+</html>
